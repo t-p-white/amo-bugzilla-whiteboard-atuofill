@@ -1,0 +1,43 @@
+.wb-autofill-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  margin: 4px 0 8px 0;
+}
+
+.wb-autofill-btn {
+  font-size: 11px;
+  line-height: 1.4;
+  padding: 2px 7px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  background: #f5f5f5;
+  color: #333;
+  cursor: pointer;
+}
+
+.wb-autofill-btn:hover {
+  background: #e0e0e0;
+}
+
+.wb-autofill-btn.active {
+  background: #0060df;
+  border-color: #0060df;
+  color: #fff;
+}
+
+.wb-autofill-options-btn {
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+.wb-autofill-options-btn:hover {
+  background: #eee;
+}

@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Whiteboard Autofill — Options</title>
+<style>
+  body {
+    font-family: -apple-system, sans-serif;
+    padding: 16px;
+    max-width: 420px;
+  }
+  h2 {
+    margin-top: 0;
+  }
+  p.hint {
+    color: #555;
+    font-size: 12px;
+  }
+  ul#tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 12px 0;
+  }
+  ul#tag-list li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+  }
+  ul#tag-list li input[type="text"] {
+    flex: 1;
+    padding: 4px 6px;
+    font-family: monospace;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+  ul#tag-list li button.delete {
+    border: 1px solid #ccc;
+    background: transparent;
+    color: #a00;
+    font-size: 12px;
+    line-height: 1;
+    padding: 4px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  ul#tag-list li button.delete:hover {
+    background: #fdecea;
+    border-color: #c00;
+  }
+  #add-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  #add-row input[type="text"] {
+    flex: 1;
+    padding: 4px 6px;
+    font-family: monospace;
+    font-size: 13px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+  #status {
+    margin-top: 8px;
+    font-size: 12px;
+    color: green;
+    height: 14px;
+  }
+</style>
+</head>
+<body>
+  <h2>Predefined Whiteboard Tags</h2>
+  <p class="hint">
+    Add, edit, or remove tags below. Each one shows up as a toggle button
+    under the Whiteboard field on Bugzilla. Changes save automatically.
+  </p>
+  <ul id="tag-list"></ul>
+  <div id="add-row">
+    <input type="text" id="new-tag" placeholder="[new-tag]" />
+    <button id="add">Add</button>
+  </div>
+  <button id="reset">Reset to defaults</button>
+  <div id="status"></div>
+  <script src="defaults.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
