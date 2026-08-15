@@ -12,19 +12,20 @@
   padding: 2px 7px;
   border: 1px solid #999;
   border-radius: 3px;
-  background: #f5f5f5;
-  color: #333;
+  background: #f5f5f5 !important;
+  color: #333 !important;
   cursor: pointer;
 }
 
 .wb-autofill-btn:hover {
-  background: #e0e0e0;
+  background: #e0e0e0 !important;
+  color: #333 !important;
 }
 
 .wb-autofill-btn.active {
-  background: #0060df;
+  background: #0060df !important;
   border-color: #0060df;
-  color: #fff;
+  color: #fff !important;
 }
 
 .wb-autofill-options-btn {
@@ -32,12 +33,13 @@
   padding: 2px 6px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  background: transparent;
-  color: #555;
+  background: transparent !important;
+  color: #555 !important;
   cursor: pointer;
   margin-left: 4px;
 }
 
 .wb-autofill-options-btn:hover {
-  background: #eee;
+  background: #eee !important;
+  color: #555 !important;
 }
