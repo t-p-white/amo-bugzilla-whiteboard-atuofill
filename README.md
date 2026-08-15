@@ -24,8 +24,7 @@ re-injects).
   `npx web-ext build`, set `xpinstall.signature.required` to `false` in
   `about:config`, then open the `.xpi` in Firefox to install it for good.
   This does *not* work on Release/Beta — there's no override there.
-- **Any channel:** TODO — add the addons.mozilla.org listing link once
-  submitted.
+- **Any channel:** Install from AMO directly at [https://addons.mozilla.org/en-GB/firefox/addon/bugzilla-whiteboard-autofill/](https://addons.mozilla.org/en-GB/firefox/addon/bugzilla-whiteboard-autofill/).
 
 ## Customizing the tag list
 
