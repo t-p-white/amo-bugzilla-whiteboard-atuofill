@@ -8,7 +8,7 @@
   }
 
   function splitTags(value) {
-    return value.split(/\s+/).filter(Boolean);
+    return value.match(/\[[^\]]*\]|\S+/g) || [];
   }
 
   function toggleTag(input, tag) {
